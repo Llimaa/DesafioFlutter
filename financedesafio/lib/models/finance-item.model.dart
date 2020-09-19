@@ -5,13 +5,7 @@ class FinanceItemModel {
 
   FinanceItemModel(this.title, this.description, this.total);
 
-  FinanceItemModel.fromJson(Map<String, dynamic> json) {
-    title = json['title'];
-    description = json['description'];
-    total = json['total'];
-  }
-
-  factory FinanceItemModel.fromJson2(dynamic json) {
+  factory FinanceItemModel.fromJson(dynamic json) {
     return FinanceItemModel(json['title'] as String,
         json['description'] as String, json['total'] as int);
   }

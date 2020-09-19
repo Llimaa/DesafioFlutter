@@ -8,7 +8,7 @@ class FinanceRepository {
 
     var tagObjsJson = jsonDecode(tagsJson)['finances'] as List;
     List<FinanceItemModel> tagObjs = tagObjsJson
-        .map((tagJson) => FinanceItemModel.fromJson2(tagJson))
+        .map((tagJson) => FinanceItemModel.fromJson(tagJson))
         .toList();
     print(tagObjs);
     return tagObjs;

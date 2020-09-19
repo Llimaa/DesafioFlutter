@@ -21,7 +21,7 @@ class _TodoListState extends State<TodoList> {
           color: Theme.of(context).primaryColor,
         ),
         Container(
-          height: 330,
+          height: 320,
           width: double.infinity,
           child: Observer(
             builder: (_) => ListView.builder(
